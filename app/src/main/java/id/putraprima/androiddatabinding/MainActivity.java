@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setMahasiswa(){
+        mahasiswa = new Mahasiswa("Putra Prima Arhandi","0410630078");
         txtNama = findViewById(R.id.txtNama);
         txtNim = findViewById(R.id.txtNim);
-        txtNama.setText("Putra Prima Arhandi");
-        txtNim.setText("0410630078");
+        txtNama.setText(mahasiswa.getNama());
+        txtNim.setText(mahasiswa.getNim());
     }
-
 }
